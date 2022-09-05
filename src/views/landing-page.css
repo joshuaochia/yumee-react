@@ -443,11 +443,35 @@
 .landing-page-link11 {
   display: contents;
 }
+
 .landing-page-icon13 {
   fill: var(--dl-color-gray-white);
   width: 24px;
   height: 24px;
 }
+
+
+.landing-black-page-icon11 {
+  fill: black;
+  width: 24px;
+  height: 24px;
+}
+.landing-black-page-link11 {
+  display: contents;
+}
+
+.landing-black-page-icon13 {
+  fill: black;
+  width: 24px;
+  height: 24px;
+}
+
+.landing-black-page-icon15 {
+  fill: black;
+  width: 24px;
+  height: 24px;
+}
+
 .landing-page-link12 {
   display: contents;
 }
