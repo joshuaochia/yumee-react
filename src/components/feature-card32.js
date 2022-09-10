@@ -3,6 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import './feature-card32.css'
+import { BsChevronDoubleDown } from 'react-icons/bs'
 
 const FeatureCard32 = (props) => {
   return (
@@ -19,6 +20,7 @@ const FeatureCard32 = (props) => {
       <span className="feature-card32-text3">{props.description2}</span>
       <span className="feature-card32-text4">{props.description1}</span>
       <span className="feature-card32-text5">{props.action}</span>
+      <BsChevronDoubleDown className='mt-4'/>
     </div>
   )
 }

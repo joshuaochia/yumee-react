@@ -2,9 +2,6 @@ import React, { useState } from "react";
 
 import { Helmet } from "react-helmet";
 import NavBar from "../components/NavBar";
-import FeatureCard31 from "../components/feature-card31";
-import FeatureCard311 from "../components/feature-card311";
-import FeatureCard32 from "../components/feature-card32";
 import PlaceCard from "../components/place-card";
 import TestimonialCard2 from "../components/testimonial-card2";
 import TestimonialCard21 from "../components/testimonial-card21";
@@ -14,8 +11,12 @@ import Form from "../components/Form";
 import Fade from 'react-reveal/Fade';
 import Footer from "../components/Footer";
 import SocialMedia from "../components/SocialMedia";
+import serviceBackground from '../assets/joyful.png'
+import Card from "../components/Card";
+import { cards } from '../data'
 
 const Home = (props) => {
+
   const [isApplicantForm, setIsApplicantForm] = useState(false);
   return (
     <div className="landing-page-container">
@@ -27,22 +28,23 @@ const Home = (props) => {
         <NavBar />
         <div
           style={{ height: "100%" }}
-          className="container row align-items-center "
+          className="container row align-items-center p-4 "
         >
-          <div className="col  ">
+          <div className="col-md-6 col-sm-12 ">
             <img
+              
               alt="image"
               src="/playground_assets/image_2022-07-12_090156140-600w.png"
-              className="landing-page-image"
+              className="landing-page-image img-fluid text-center"
             />
           </div>
-          <div style={{ backgroundColor: "#cadcd9" }} className="col py-2 ">
-            <div className="landing-page-container02">
+          <div  className="col-md-6 col-sm-12 py-2 form-bg">
+       
               <Form
                 setIsApplicantForm={setIsApplicantForm}
                 applicant={isApplicantForm}
               />
-            </div>
+         
           </div>
         </div>
       </div>
@@ -85,7 +87,7 @@ const Home = (props) => {
           </span>
         </div>
         </Fade>
-        <div className="landing-page-features">
+        <div style={{backgroundImage:`url(${serviceBackground})`}} className="landing-page-features">
           <h1 className="landing-page-text26">
             <span>Explore our services</span>
             <br></br>
@@ -96,13 +98,13 @@ const Home = (props) => {
             <br></br>
           </span>
           <div className="landing-page-container03">
-            <FeatureCard31 rootClassName="feature-card31-root-class-name1"></FeatureCard31>
-            <FeatureCard311 rootClassName="feature-card311-root-class-name"></FeatureCard311>
-            <FeatureCard32 rootClassName="feature-card32-root-class-name"></FeatureCard32>
+            {cards.map(item =>  <Card {...item} rootClassName="feature-card31-root-class-name1"/>)}
+            
+          
           </div>
         </div>
       </div>
-      <div id="main-section" className="landing-page-main-mission-vission">
+      <div  id="main-section" className="landing-page-main-mission-vission">
         <h1>Our services</h1>
         <span className="landing-page-text33">Recommended</span>
         <div className="landing-page-cards-container">

@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import PropTypes from 'prop-types'
 
 import './feature-card31.css'
-
+import { BsChevronDoubleDown } from 'react-icons/bs'
 const FeatureCard31 = (props) => {
+  const [isShow, setIsShow] = useState(false)
   return (
     <div className={`feature-card31-feature-card ${props.rootClassName} `}>
       <svg viewBox="0 0 1024 1024" className="feature-card31-icon">
@@ -19,6 +20,8 @@ const FeatureCard31 = (props) => {
       <span className="feature-card31-text3">{props.description2}</span>
       <span className="feature-card31-text4">{props.description1}</span>
       <span className="feature-card31-text5">{props.action}</span>
+      <BsChevronDoubleDown onMouseEnter={() => setIsShow(true)} onMouseLeave={() => setIsShow(false)} className='mt-4'/>
+      {isShow && <p>yawa</p>}
     </div>
   )
 }
@@ -42,5 +45,6 @@ FeatureCard31.propTypes = {
   description: PropTypes.string,
   action: PropTypes.string,
 }
+
 
 export default FeatureCard31
