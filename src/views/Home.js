@@ -15,6 +15,8 @@ import serviceBackground from '../assets/joyful.png'
 import Card from "../components/Card";
 import { cards } from '../data'
 
+
+
 const Home = (props) => {
 
   const [isApplicantForm, setIsApplicantForm] = useState(false);
@@ -43,6 +45,8 @@ const Home = (props) => {
               <Form
                 setIsApplicantForm={setIsApplicantForm}
                 applicant={isApplicantForm}
+               
+
               />
          
           </div>
@@ -63,11 +67,11 @@ const Home = (props) => {
  
    <Fade top>
     <div className="landing-page-banner1">
-          <h1 className="landing-page-text21">Vission</h1>
+          <h1 className="landing-page-text21">Vision</h1>
           <span className="landing-page-text22">
             <span>
               <span>
-                Our vision is to help our elders live with pride by having a
+                Our Vision is to help our elders live with pride by having a
                 peace of mind, keeping them safe and protected. Assisting with
                 daily activities and alleviating homesickness.
                 <span
@@ -89,7 +93,7 @@ const Home = (props) => {
         </Fade>
         <div style={{backgroundImage:`url(${serviceBackground})`}} className="landing-page-features">
           <h1 className="landing-page-text26">
-            <span>Explore our services</span>
+            <span>Explore our Services</span>
             <br></br>
             <span></span>
           </h1>
@@ -97,8 +101,8 @@ const Home = (props) => {
             <span>Levels of care</span>
             <br></br>
           </span>
-          <div className="landing-page-container03">
-            {cards.map(item =>  <Card {...item} rootClassName="feature-card31-root-class-name1"/>)}
+          <div style={{width:'100%'}} className="row">
+            {cards.map(item =>  <Card {...item}  rootClassName="feature-card31-root-class-name1"/>)}
             
           
           </div>

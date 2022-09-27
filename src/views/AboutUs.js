@@ -40,7 +40,7 @@ const AboutUs = (props) => {
           <span>Frequently Asked Questions</span>
           <br></br>
         </h1>
-        <span className="page-text15">1. is company licensed ?</span>
+        <span className="page-text15">1. Is company licensed ?</span>
         <span className="page-text16">
           Yes, we are licensed and bonded with 3 years of experience in the
           industry
@@ -53,7 +53,7 @@ const AboutUs = (props) => {
           staff members
         </span>
         <span className="page-text19">
-          4. are your caregivers live in/live out?
+          4. Are your caregivers live in/live out?
         </span>
         <span className="page-text20">
           Our caregivers can do both live in and out. Depends on the patients
