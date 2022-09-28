@@ -8,7 +8,7 @@ const Area = (props) => {
 <div className='col-md-3'>
   <link href="./feature-card1.css" rel="stylesheet" />
     <div className={classes['feature-card1-feature-card']}>
-    <h2 className={classes['feature-card1-text']}><span>Lorem ipsum</span></h2>
+    <h2 className={classes['feature-card1-text']}><span>{props.title}</span></h2>
     <img
       alt="image"
       src={props.img ? props.img : placeHolderImage}

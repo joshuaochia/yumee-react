@@ -23,28 +23,52 @@ const ServicesArea = (props) => {
       <div style={{width:'100%'}} className="container text-start my-5">
       <h1>Los Angeles Country:</h1>
        <div className="row">
-       <Area/>
-       <Area/>
-       <Area/>
-       <Area/>
+       <Area title={'Beverly Hills'} img=""/>
+       <Area title={'Pasadena'} img=""/>
+       <Area title={'Santa Monica'} img=""/>
+       <Area title={'Calabasas'} img=""/>
+       <Area title={'Culver'} img=""/>
+       <Area title={'Malibu'} img=""/>
+       <Area title={'Alhambra'} img=""/>
+       <Area title={'Rancho Palos Verdes'} img=""/>
+       <Area title={'Torrance'} img=""/>
+       <Area title={'Lomita'} img=""/>
+       <Area title={'Gardena'} img=""/>
+       <Area title={'Hawthorne'} img=""/>
+       <Area title={'Lawndale'} img=""/>
+       <Area title={'San Pedro'} img=""/>
+       <Area title={'Pacific Palisades'} img=""/>
+       <Area title={'Rolling Hills'} img=""/>
+       <Area title={'South Bay'} img=""/>
+       <Area title={'Redondo'} img=""/>
+       <Area title={'Long Beach'} img=""/>
        </div>
       </div>
       <div style={{width:'100%'}} className="container text-start my-5">
       <h1>Orange Country:</h1>
        <div className="row">
-       <Area/>
-       <Area/>
-       <Area/>
-       <Area/>
+       <Area title={'Anaheim'} img=""/>
+       <Area title={'Laguna Hills'} img=""/>
+       <Area title={'Newport Beach'} img=""/>
+       <Area title={'Irvine'} img=""/>
+       <Area title={'Seal Beach'} img=""/>
+       <Area title={'Huntington'} img=""/>
+       <Area title={'Whittier Glendora'} img=""/>
+       <Area title={'Arcadia'} img=""/>
+       <Area title={'Claremont'} img=""/>
+
        </div>
       </div>
       <div style={{width:'100%'}} className="container text-start my-5">
-      <h1>Discover our unique features:</h1>
+      <h1>Ventura Country:</h1>
        <div className="row">
-       <Area/>
-       <Area/>
-       <Area/>
-       <Area/>
+       <Area title={'Westlake'} img=""/>
+       <Area title={'Thousand Oaks Camarillo'} img=""/>
+       <Area title={'Oxnard'} img=""/>
+       <Area title={'Simi Valley'} img=""/>
+       <Area title={'Moorpark'} img=""/>
+       <Area title={'Ojai'} img=""/>
+       <Area title={'Santa Barbara'} img=""/>
        </div>
       </div>
       <Footer/>
