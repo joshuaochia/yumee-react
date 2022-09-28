@@ -140,7 +140,7 @@ const Form = (props) => {
         <div class="col">
         <label for="exampleFormControlTextarea1">Desired Hours</label>
           <select onChange={onChangeHandler} value={formData.option} name="option" type="text" class="form-control" aria-label="Last name" >
-          <option selected>1,2,3.....23, 24</option>
+          <option selected>1,2,3,.....23, 24</option>
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>

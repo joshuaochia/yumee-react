@@ -17,7 +17,7 @@ const ServicesArea = (props) => {
       </Helmet>
       <NavBar />
       <div style={{backgroundImage: `url(${backgroundPlaceHolder})`, width:'100%'}} className="page-hero">
-        <h1 className="page-text09">About us</h1>
+        <h1 className="page-text09">Area of Services</h1>
         <button type="button" class="btn btn-dark btn-lg px-3">Get Started</button>
       </div>
       <div style={{width:'100%'}} className="container text-start my-5">

@@ -28,7 +28,7 @@ const AboutUs = (props) => {
       <Splide options={{type:'loop'}} style={{width:'100%'}} aria-label="My Favorite Images">
     {images.map(item => <SplideSlide>
       <div  style={{backgroundImage: `url(${item})`, width:'100%'}} className="page-hero">
-        <h1 className="page-text09">About us</h1>
+        <h1 className="page-text09">About Us</h1>
       </div>
     </SplideSlide>)}
 
@@ -40,17 +40,17 @@ const AboutUs = (props) => {
           <span>Frequently Asked Questions</span>
           <br></br>
         </h1>
-        <span className="page-text15">1. Is company licensed ?</span>
+        <span className="page-text15">1. Is the Company licensed?</span>
         <span className="page-text16">
           Yes, we are licensed and bonded with 3 years of experience in the
-          industry
+          industry.
         </span>
         <span className="page-text17">
           2. Do you conduct background check on your caregiver?
         </span>
         <span className="page-text18">
           Yes, most of our caregiver is personally picked and interviewed by our
-          staff members
+          staff members.
         </span>
         <span className="page-text19">
           4. Are your caregivers live in/live out?
@@ -61,7 +61,7 @@ const AboutUs = (props) => {
         </span>
         <span className="page-text21">5. What are your minimum hours?</span>
         <span className="page-text22">
-          Our hours are case to case, depends on the patient&apos;s need
+          Our hours are case to case, depends on the patient&apos;s need.
         </span>
       </div>
     <Footer/>

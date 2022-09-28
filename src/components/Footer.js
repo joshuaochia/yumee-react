@@ -34,7 +34,14 @@ const Footer = () => {
           >
            Area of Services
           </a>
-
+          <a
+            href="https://example.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="landing-page-link04"
+          >
+            Terms and Condition
+          </a>
         </div>
         {/* <div className="landing-page-container09">
           <a
