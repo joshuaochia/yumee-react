@@ -40,7 +40,7 @@ const Footer = () => {
             rel="noreferrer noopener"
             className="landing-page-link04"
           >
-            Terms and Condition
+            Terms and Conditions
           </a>
         </div>
         {/* <div className="landing-page-container09">
