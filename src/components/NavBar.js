@@ -13,7 +13,7 @@ const NavBar = () => {
 
   return (
     <nav data-role="Header" className="landing-page-navbar">
-      <h1>MyJoyfulHearts</h1>
+      <h1>My Joyful Hearts</h1>
       <div className="landing-page-right-side">
         <div className="la nding-page-links-container">
           <span onClick={() => navigate("/")} className="landing-page-text">

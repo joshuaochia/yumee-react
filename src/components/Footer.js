@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="landing-page-footer">
     <div className="landing-page-menu">
       <h1>
-        <span>MyJoyfulHearts</span>
+        <span>My Joyful Hearts</span>
         <br></br>
       </h1>
       <div className="landing-page-links-container2">
