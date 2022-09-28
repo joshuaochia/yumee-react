@@ -41,7 +41,7 @@ const Footer = () => {
             href="https://example.com"
             target="_blank"
             rel="noreferrer noopener"
-            className="landing-page-link07"
+            className="landing-page-link07"landing-page-container09
           >
             Our Caregivers
           </a>
@@ -59,7 +59,7 @@ const Footer = () => {
             rel="noreferrer noopener"
             className="landing-page-link09"
           >
-            Terms and conditions
+            Terms and Conditions
           </a>
         </div> 
       </div>
