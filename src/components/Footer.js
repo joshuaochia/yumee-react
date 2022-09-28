@@ -34,11 +34,14 @@ const Footer = () => {
           >
            Area of Services
           </a>
+          
+        </div>
+         <div className="landing-page-container09">
           <a
             href="https://example.com"
             target="_blank"
             rel="noreferrer noopener"
-            className="landing-page-link04"
+            className="landing-page-link07"
           >
             Our Caregivers
           </a>
@@ -46,36 +49,9 @@ const Footer = () => {
             href="https://example.com"
             target="_blank"
             rel="noreferrer noopener"
-            className="landing-page-link04"
-          >
-            FAQ's
-          </a>
-          <a
-            href="https://example.com"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="landing-page-link04"
-          >
-            Terms and Conditions
-          </a>
-          
-        </div>
-        {/* <div className="landing-page-container09">
-          <a
-            href="https://example.com"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="landing-page-link07"
-          >
-            About us
-          </a>
-          <a
-            href="https://example.com"
-            target="_blank"
-            rel="noreferrer noopener"
             className="landing-page-link08"
           >
-            FAQ
+            FAQ's
           </a>
           <a
             href="https://example.com"
@@ -85,7 +61,7 @@ const Footer = () => {
           >
             Terms and conditions
           </a>
-        </div> */}
+        </div> 
       </div>
       <div className="landing-page-follow-container1">
   
