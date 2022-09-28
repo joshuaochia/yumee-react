@@ -118,12 +118,12 @@ const Form = (props) => {
       </div>
       <div class="row mt-2 ">
         <div class="col">
-        <label for="exampleFormControlTextarea1">Address</label>
-          <input onChange={onChangeHandler} value={formData.address} name="address" type="text" class="form-control" aria-label="Last name" />
+        <label for="exampleFormControlTextarea1">City</label>
+          <input onChange={onChangeHandler} value={formData.city} name="city" type="text" class="form-control" aria-label="Last name" />
         </div>
         <div class="col">
-        <label for="exampleFormControlTextarea1">City/state</label>
-          <input onChange={onChangeHandler} value={formData.city} name="city" type="text" class="form-control" aria-label="Last name" />
+        <label for="exampleFormControlTextarea1">Zip  Code</label>
+          <input onChange={onChangeHandler} value={formData.zip_code} name="zip_code" type="text" class="form-control" aria-label="Last name" />
    
         </div>
       </div>
@@ -131,18 +131,45 @@ const Form = (props) => {
         <div class="col">
         <label for="exampleFormControlTextarea1">Partime/Fulltime</label>
           <select onChange={onChangeHandler} value={formData.option} name="option" type="text" class="form-control" aria-label="Last name" >
-          <option selected>---</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
+          <option selected>(Part-time/Full-time)</option>
+          <option value="part-time">Part-time</option>
+          <option value="full-time">Full-time</option>
+     
           </select>
         </div>
         <div class="col">
-        <label for="exampleFormControlTextarea1">Zip Code</label>
-          <input onChange={onChangeHandler} value={formData.zip_code} name="zip_code" type="text" class="form-control" aria-label="Last name" />
-   
+        <label for="exampleFormControlTextarea1">Desired Hours</label>
+          <select onChange={onChangeHandler} value={formData.option} name="option" type="text" class="form-control" aria-label="Last name" >
+          <option selected>1,2,3.....23, 24</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+     
+          </select>
         </div>
       </div>
-        <div class="form-group">
+        {/* <div class="form-group">
           <label for="exampleFormControlTextarea1">Message (Optional)</label>
           <textarea
             onChange={onChangeHandler}
@@ -154,7 +181,7 @@ const Form = (props) => {
             cols="50"
             style={{ width: "75%" }}
           ></textarea>
-        </div>
+        </div> */}
         <div className="text-center text-md-end">
           <button   class="btn btn-success">
             SUBMIT
