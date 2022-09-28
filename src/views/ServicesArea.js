@@ -63,12 +63,12 @@ const ServicesArea = (props) => {
       <h1>Ventura Country:</h1>
        <div className="row">
        <Area title={'Westlake'} img=""/>
-       <Area title={'Thousand Oaks Camarillo'} img=""/>
        <Area title={'Oxnard'} img=""/>
        <Area title={'Simi Valley'} img=""/>
        <Area title={'Moorpark'} img=""/>
        <Area title={'Ojai'} img=""/>
        <Area title={'Santa Barbara'} img=""/>
+       <Area title={'Thousand Oaks Camarillo'} img=""/>
        </div>
       </div>
       <Footer/>
