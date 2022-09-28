@@ -40,8 +40,25 @@ const Footer = () => {
             rel="noreferrer noopener"
             className="landing-page-link04"
           >
+            Our Caregivers
+          </a>
+          <a
+            href="https://example.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="landing-page-link04"
+          >
+            FAQ's
+          </a>
+          <a
+            href="https://example.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="landing-page-link04"
+          >
             Terms and Conditions
           </a>
+          
         </div>
         {/* <div className="landing-page-container09">
           <a
