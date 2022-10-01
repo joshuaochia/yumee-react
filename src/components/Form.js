@@ -15,17 +15,26 @@ const Form = (props) => {
     option:'',
     zip_code:'',
     message:'',
+    desired_hours: '',
+    time: '',
+    CareerOpportunity:'',
+    WhoNeedsCare:'',
+
   })
   const alert = useAlert()
   const [state, handleSubmit] = useForm("xbjboywg");
 
   const onChangeHandler = (e) => {
+    console.log(e.target.name)
+    console.log(e.target.value)
     setFormData(prevData => ({...prevData, [e.target.name] : e.target.value }))
   }
 
+  console.log(formData)
+
   useEffect(() => {
     if (state.succeeded) {
-      alert.show('Successfully sent')
+     
       setFormData({
         first_name:'',
         last_name:'',
@@ -36,8 +45,12 @@ const Form = (props) => {
         option:'select',
         zip_code:'',
         message:'',
+        desired_hours: 'select',
+        time: 'select',
+        CareerOpportunity:'',
+        WhoNeedsCare:'',
       })
-   
+      alert.show('Successfully sent')
     }
   },[state.succeeded])
 
@@ -75,25 +88,31 @@ const Form = (props) => {
             </p>
           </div>
         </div>
-   <div class="">
-   <div style={{position:'relative'}} class="col-12 col-md-4 offset-md-4">
-      <label  class="form-check-label mx-3" for="flexCheckDefault">
-        Caregiver
-      </label>
-      <input style={{position:'absolute', right: '0'}} class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-    </div>
-    <div style={{position:'relative'}} class="col-12 col-md-4 offset-md-4">
-      <label  class="form-check-label mx-3" for="flexCheckDefault">
-        Client Referral
-      </label>
-      <input style={{position:'absolute', right: '0'}} class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-    </div>
-    <div style={{position:'relative'}} class="col-12 col-md-4 offset-md-4 ">
-      <label  class="form-check-label mx-3" for="flexCheckDefault">
-        Others
-      </label>
-     <input style={{position:'absolute', right: '0'}} class="form-check-input "   type="checkbox" value="" id="flexCheckDefault"/>
-    </div>
+        <div class="">
+   <div style={{position:'relative'}} class="form-check col-12 col-md-4 offset-md-4">
+   <label class="form-check-label mx-3" for="exampleRadios1">
+    Caregiver
+  </label>
+  <input onChange={onChangeHandler} checked={formData.CareerOpportunity === 'CareGiver'}  value="CareGiver" style={{position:'absolute', right: '0'}} class="form-check-input" type="radio" name="CareerOpportunity" id="exampleRadios1"/>
+
+</div>
+<div style={{position:'relative'}} class="form-check col-12 col-md-4 offset-md-4">
+<label class="form-check-label mx-3" for="exampleRadios2">
+    Client Referrals
+  </label>
+  <input onChange={onChangeHandler} checked={formData.CareerOpportunity === 'ClientReferrals'} value="ClientReferrals" style={{position:'absolute', right: '0'}} class="form-check-input" type="radio" name="CareerOpportunity" id="exampleRadios2" />
+
+</div>
+
+<div style={{position:'relative'}} class="form-check col-12 col-md-4 offset-md-4">
+<label class="form-check-label mx-3" for="exampleRadios3">
+    Others
+  </label>
+  <input onChange={onChangeHandler} checked={formData.CareerOpportunity === 'Others'}  value="Others" style={{position:'absolute', right: '0'}} class="form-check-input" type="radio" name="CareerOpportunity" id="exampleRadios3"/>
+
+</div>
+
+ 
    </div>
         <div class="row mt-2 ">
         <div class="col">
@@ -130,7 +149,7 @@ const Form = (props) => {
       <div class="row mt-2 ">
         <div class="col">
         <label for="exampleFormControlTextarea1">Partime/Fulltime</label>
-          <select onChange={onChangeHandler} value={formData.option} name="option" type="text" class="form-control" aria-label="Last name" >
+          <select onChange={onChangeHandler} value={formData.time} name="time" type="text" class="form-control" aria-label="Last name" >
           <option selected>(Part-time/Full-time)</option>
           <option value="part-time">Part-time</option>
           <option value="full-time">Full-time</option>
@@ -139,7 +158,7 @@ const Form = (props) => {
         </div>
         <div class="col">
         <label for="exampleFormControlTextarea1">Desired Hours</label>
-          <select onChange={onChangeHandler} value={formData.option} name="option" type="text" class="form-control" aria-label="Last name" >
+          <select onChange={onChangeHandler} value={formData.desired_hours} name="desired_hours" type="text" class="form-control" aria-label="Last name" >
           <option selected>1,2,3,.....23, 24</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -216,24 +235,30 @@ const Form = (props) => {
         </div>
       </div>
    <div class="">
-   <div style={{position:'relative'}} class="col-12 col-md-4 offset-md-4">
-      <label  class="form-check-label mx-3" for="flexCheckDefault">
-        A Loved One
-      </label>
-      <input style={{position:'absolute', right: '0'}} class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-    </div>
-    <div style={{position:'relative'}} class="col-12 col-md-4 offset-md-4">
-      <label  class="form-check-label mx-3" for="flexCheckDefault">
-        Myself
-      </label>
-      <input style={{position:'absolute', right: '0'}} class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-    </div>
-    <div style={{position:'relative'}} class="col-12 col-md-4 offset-md-4 ">
-      <label  class="form-check-label mx-3" for="flexCheckDefault">
-        Others
-      </label>
-     <input style={{position:'absolute', right: '0'}} class="form-check-input "   type="checkbox" value="" id="flexCheckDefault"/>
-    </div>
+   <div style={{position:'relative'}} class="form-check col-12 col-md-4 offset-md-4">
+   <label class="form-check-label mx-3" for="exampleRadios1">
+    A loved one
+  </label>
+  <input onChange={onChangeHandler} checked={formData.WhoNeedsCare === 'A_loved_one'} value="A_loved_one" style={{position:'absolute', right: '0'}} class="form-check-input" type="radio" name="WhoNeedsCare" id="exampleRadios1" />
+
+</div>
+<div style={{position:'relative'}} class="form-check col-12 col-md-4 offset-md-4">
+<label class="form-check-label mx-3" for="exampleRadios2">
+    MySelf
+  </label>
+  <input onChange={onChangeHandler} checked={formData.WhoNeedsCare === 'MySelf'} value="MySelf" style={{position:'absolute', right: '0'}} class="form-check-input" type="radio" name="WhoNeedsCare" id="exampleRadios2" />
+
+</div>
+
+<div style={{position:'relative'}} class="form-check col-12 col-md-4 offset-md-4">
+<label class="form-check-label mx-3" for="exampleRadios3">
+    Others
+  </label>
+  <input  onChange={onChangeHandler} checked={formData.WhoNeedsCare === 'Others'} value="Others" style={{position:'absolute', right: '0'}} class="form-check-input" type="radio" name="WhoNeedsCare" id="exampleRadios3" />
+
+</div>
+
+ 
    </div>
       <div class="row mt-2 ">
         <div class="col">

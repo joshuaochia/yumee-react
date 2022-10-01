@@ -26,13 +26,18 @@ const Card = (props) => {
      </div>
  
      <div className='text-center' style={{width:'100%'}}  onMouseEnter={() => setIsShow(true)} onMouseOut={onLeave}> 
+     <span style={{display:'block'}} className="feature-card31-text2">{props.description}</span>
+      <span style={{display:'block'}}  className="feature-card31-text3">{props.description2}</span>
+      <span style={{display:'block'}}  className="feature-card31-text4">{props.description1}</span>
      <BsChevronDoubleDown onMouseEnter={() => setIsShow(true)} className='mt-4' onMouseOut={onLeave}/>
      </div>
       {isShow && 
-      <div>
-      <span style={{display:'block'}} className="feature-card31-text2">{props.description}</span>
-      <span style={{display:'block'}}  className="feature-card31-text3">{props.description2}</span>
-      <span style={{display:'block'}}  className="feature-card31-text4">{props.description1}</span>
+      <div className='text-center'>
+        <ul>
+        {props.dropdown.map(item => <li>{item}</li>)}
+
+     
+        </ul>
       {/* <span style={{display:'block'}}  className="feature-card31-text5">{props.action}</span> */}
       </div>}
     </div>

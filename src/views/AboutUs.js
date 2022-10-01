@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet";
 
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import SocialMedia from "../components/SocialMedia";
 
 const AboutUs = (props) => {
 
@@ -64,6 +65,7 @@ const AboutUs = (props) => {
           Our hours are case to case, depends on the patient&apos;s need.
         </span>
       </div>
+      <SocialMedia/>
     <Footer/>
     </div>
   );

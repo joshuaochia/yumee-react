@@ -47,14 +47,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "OpenSans";
+  font-family: "OpenSans", sans-serif;
 }
 
 p,
 small,
 a,
 span {
-  font-family: "HammersmithOne";
+  font-family: "HammersmithOne", sans-serif;
 }
 
 .button {
