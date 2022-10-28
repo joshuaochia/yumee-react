@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink  } from 'react-router-hash-link';
 
 const Footer = () => {
   return (
@@ -37,22 +38,16 @@ const Footer = () => {
           
         </div>
          <div className="landing-page-container09">
-          <a
-            href="https://example.com"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="landing-page-link07"landing-page-container09
+          <HashLink
+           to="/about#our-caregivers"
           >
             Our Caregivers
-          </a>
-          <a
-            href="https://example.com"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="landing-page-link08"
+          </HashLink>
+          <HashLink
+         to="/about#F&A"
           >
             FAQ's
-          </a>
+          </HashLink>
           <a
             href="https://example.com"
             target="_blank"

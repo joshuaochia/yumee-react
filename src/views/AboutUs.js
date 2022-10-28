@@ -4,10 +4,15 @@ import NavBar from "../components/NavBar";
 import "./page1.css";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
-
+import aboutUs from '../assets/about-us.png'
+import abutUs2 from '../assets/about-us2.png'
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import SocialMedia from "../components/SocialMedia";
+import { aboutUsOne } from "../data";
+import backgroundImageText from '../assets/background.png'
+import joyful1 from '../assets/joyful1.png'
+import employeePic from '../assets/employee.png'
 
 const AboutUs = (props) => {
 
@@ -28,14 +33,60 @@ const AboutUs = (props) => {
 
       <Splide options={{type:'loop'}} style={{width:'100%'}} aria-label="My Favorite Images">
     {images.map(item => <SplideSlide>
-      <div  style={{backgroundImage: `url(${item})`, width:'100%'}} className="page-hero">
+      <div  style={{backgroundImage: `url(${aboutUs})`, width:'100%',}} className="page-hero img-fluid">
         <h1 className="page-text09">About Us</h1>
       </div>
     </SplideSlide>)}
 
  
 </Splide>
-<div className="page-container">
+<section style={{backgroundImage:`url(${backgroundImageText})`,  backgroundPosition: 'center'}} className="container-fluid">
+  <div  className="container text-center my-5">
+    
+  <p style={{fontSize:'20px'}}> {aboutUsOne}</p>
+  </div>
+</section>
+
+
+<Splide options={{type:'loop'}} style={{width:'100%'}} aria-label="My Favorite Images">
+    {images.map(item => <SplideSlide>
+      <div  style={{backgroundImage: `url(${abutUs2})`, width:'100%',}} className="page-hero img-fluid">
+        <h1 className="page-text09">About Us</h1>
+      </div>
+    </SplideSlide>)}
+
+ 
+</Splide>
+
+<div  id='our-caregivers' className=" container">
+      <h5 className="page-text12">Mandatory Training</h5>
+      <ul className="page-text12">
+        <li>4 hours Orientation / Once a year Continuing Education</li>
+        <li>Home Care Aid Registration</li>
+        <li>Fall Prevention</li>
+        <li>Emergency Procedure</li>
+        <li>CPR/First Aid</li>
+        <li>Healthy Meal Preparation</li>
+      </ul>
+      <h6 className="text-left-custom">Employee Monthly Evaluation</h6>
+      <h6 className="text-left-custom">Employee Benefits who has exemplary care for our Elders</h6>
+ </div>
+
+ <div class="container text-center">
+  <div class="row">
+    <div class="col-sm">
+    <img src={joyful1} class="img-fluid" alt="Responsive image"/>
+
+    </div>
+    <div class="col-sm">
+    <img src={employeePic} class="img-fluid" alt="Responsive image"/>
+
+    </div>
+   
+  </div>
+</div>
+
+<div id='F&A' className="page-container">
  
         <h1 className="page-text12">
           <span>Frequently Asked Questions</span>
@@ -65,6 +116,7 @@ const AboutUs = (props) => {
           Our hours are case to case, depends on the patient&apos;s need.
         </span>
       </div>
+
       <SocialMedia/>
     <Footer/>
     </div>

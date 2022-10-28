@@ -21,12 +21,12 @@ const Form = (props) => {
     WhoNeedsCare:'',
 
   })
+
   const alert = useAlert()
   const [state, handleSubmit] = useForm("xbjboywg");
 
   const onChangeHandler = (e) => {
-    console.log(e.target.name)
-    console.log(e.target.value)
+
     setFormData(prevData => ({...prevData, [e.target.name] : e.target.value }))
   }
 
