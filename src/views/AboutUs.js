@@ -112,123 +112,110 @@ const AboutUs = (props) => {
           width: "100%",
           boxShadow: "5px 5px 10px 2px rgba(18, 18, 18, 0.1)",
         }}
-        className="container text-center my-5 p-5"
+        className="container  my-5 p-5"
+        id="area-services"
       >
         <h1 className="text-center pb-4">Los Angeles Country:</h1>
         <div className="row">
-          <div class="col-sm-4">
+          <div class="col-sm-4 d-flex justify-content-center">
             <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Beverly Hills, Pasadena,</li>
+              <li>Santa Monica</li>
+              <li>Calabasas</li>
+              <li>Culver</li>
+              <li>Malibu</li>
             </ul>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 d-flex justify-content-center">
             <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Alhambra</li>
+              <li>Rancho Palos Verdes</li>
+              <li>Torrance</li>
+              <li>Lomita</li>
+              <li>Gardena</li>
             </ul>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 d-flex justify-content-center">
             <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Hawthorne</li>
+              <li>Lawndale</li>
+              <li>San Pedro</li>
+              <li>Pacific Palisades</li>
+              <li>Rolling Hills</li>
+              <li>South Bay</li>
+              <li>Redondo & Long Beach</li>
             </ul>
           </div>
         </div>
-        <button type="button" class="btn btn-primary mt-5">
-          Avail our Services for this Area
-        </button>
+        <div className="text-center">
+          <button type="button" class="btn btn-primary mt-5 text-center">
+            Avail our Services for this Area
+          </button>
+        </div>
       </div>
       <div
         style={{
           width: "100%",
           boxShadow: "5px 5px 10px 2px rgba(18, 18, 18, 0.1)",
         }}
-        className="container text-center my-5 p-5"
+        className="container  my-5 p-5"
       >
-        <h1 className="text-center pb-4">Los Angeles Country:</h1>
+        <h1 className="text-center pb-4">Orange Country:</h1>
         <div className="row">
-          <div class="col-sm-4">
+          <div class="col-sm-4 d-flex justify-content-center">
             <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Anaheim</li>
+              <li>Laguna Hills</li>
+              <li>Newport Beach</li>
+              <li>Irvine</li>
+              <li>Seal Beach</li>
             </ul>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 d-flex justify-content-center">
             <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Huntington</li>
+              <li>Whittier Glendora</li>
+              <li>Arcadia & Claremont</li>
             </ul>
           </div>
-          <div class="col-sm-4">
-            <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-            </ul>
-          </div>
+          <div class="col-sm-4 d-flex justify-content-center"></div>
         </div>
-        <button type="button" class="btn btn-primary mt-5">
-          Avail our Services for this Area
-        </button>
+        <div className="text-center">
+          <button type="button" class="btn btn-primary mt-5 text-center">
+            Avail our Services for this Area
+          </button>
+        </div>
       </div>
       <div
         style={{
           width: "100%",
           boxShadow: "5px 5px 10px 2px rgba(18, 18, 18, 0.1)",
         }}
-        className="container text-center my-5 p-5"
+        className="container  my-5 p-5"
       >
         <h1 className="text-center pb-4">Los Angeles Country:</h1>
-        <div className="row">
-          <div class="col-sm-4">
+        <div className="row ">
+          <div class="col-sm-4 d-flex justify-content-center">
             <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Westlake</li>
+              <li>Thousand Oaks Camarillo</li>
+              <li>Oxnard</li>
+              <li>Simi Valley</li>
+              <li>Moorpark</li>
             </ul>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-4 d-flex justify-content-center">
             <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
+              <li>Ojai & Santa Barbara</li>
             </ul>
           </div>
-          <div class="col-sm-4">
-            <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-              <li>Lorem ipsum</li>
-            </ul>
-          </div>
+          <div class="col-sm-4 d-flex justify-content-center"></div>
         </div>
-        <button type="button" class="btn btn-primary mt-5">
-          Avail our Services for this Area
-        </button>
+        <div className="text-center">
+          <button type="button" class="btn btn-primary mt-5 text-center">
+            Avail our Services for this Area
+          </button>
+        </div>
       </div>
       <div id="F&A" className="page-container">
         <h1 className="page-text12">
