@@ -8,17 +8,14 @@ import TestimonialCard21 from "../components/testimonial-card21";
 import TestimonialCard4 from "../components/testimonial-card4";
 import "./landing-page.css";
 import Form from "../components/Form";
-import Fade from 'react-reveal/Fade';
+import Fade from "react-reveal/Fade";
 import Footer from "../components/Footer";
 import SocialMedia from "../components/SocialMedia";
-import serviceBackground from '../assets/joyful.png'
+import serviceBackground from "../assets/joyful.png";
 import Card from "../components/Card";
-import { cards } from '../data'
-
-
+import { cards } from "../data";
 
 const Home = (props) => {
-
   const [isApplicantForm, setIsApplicantForm] = useState(false);
   return (
     <div className="landing-page-container">
@@ -34,81 +31,78 @@ const Home = (props) => {
         >
           <div className="col-md-6 col-sm-12 ">
             <img
-              
               alt="image"
               src="/playground_assets/image_2022-07-12_090156140-600w.png"
               className="landing-page-image img-fluid text-center"
             />
           </div>
-          <div  className="col-md-6 col-sm-12 py-2 form-bg">
-       
-              <Form
-                setIsApplicantForm={setIsApplicantForm}
-                applicant={isApplicantForm}
-               
-
-              />
-         
+          <div className="col-md-6 col-sm-12 py-2 form-bg">
+            <Form
+              setIsApplicantForm={setIsApplicantForm}
+              applicant={isApplicantForm}
+            />
           </div>
         </div>
       </div>
       <div className="landing-page-banner">
         <Fade top>
-
-        <h1 className="landing-page-text17">Mission</h1>
-        <span className="landing-page-text18">
-          <span>
-            Our Mission is all about caring with compassion and mindfulness.
-          </span>
-          <br></br>
-          <span></span>
-        </span>
-        </Fade>
- 
-   <Fade top>
-    <div className="landing-page-banner1">
-          <h1 className="landing-page-text21">Vision</h1>
-          <span className="landing-page-text22">
+          <h1 className="landing-page-text17">Mission</h1>
+          <span className="landing-page-text18">
             <span>
+              Our Mission is all about caring with compassion and mindfulness.
+            </span>
+            <br></br>
+            <span></span>
+          </span>
+        </Fade>
+
+        <Fade top>
+          <div className="landing-page-banner1">
+            <h1 className="landing-page-text21">Vision</h1>
+            <span className="landing-page-text22">
               <span>
-                Our Vision is to help our elders live with pride by having a
-                peace of mind, keeping them safe and protected. Assisting with
-                daily activities and alleviating homesickness.
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: " ",
-                  }}
-                />
-              </span>
-              <span>
-                <span
-                  dangerouslySetInnerHTML={{
-                    __html: " ",
-                  }}
-                />
+                <span>
+                  Our Vision is to help our elders live with pride by having a
+                  peace of mind, keeping them safe and protected. Assisting with
+                  daily activities and alleviating homesickness.
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: " ",
+                    }}
+                  />
+                </span>
+                <span>
+                  <span
+                    dangerouslySetInnerHTML={{
+                      __html: " ",
+                    }}
+                  />
+                </span>
               </span>
             </span>
-          </span>
-        </div>
+          </div>
         </Fade>
-        <div style={{backgroundImage:`url(${serviceBackground})`}} className="landing-page-features">
+        <div
+          style={{ backgroundImage: `url(${serviceBackground})` }}
+          className="landing-page-features"
+        >
           <h1 className="landing-page-text26">
             <span>Explore our Services</span>
             <br></br>
             <span></span>
           </h1>
           <span className="landing-page-text29">
-            <span>Levels of care</span>
+            <span style={{ color: "black" }}>Levels of care</span>
             <br></br>
           </span>
-          <div style={{width:'100%'}} className="row">
-            {cards.map(item =>  <Card {...item}  rootClassName="feature-card31-root-class-name1"/>)}
-            
-          
+          <div style={{ width: "100%" }} className="row">
+            {cards.map((item) => (
+              <Card {...item} rootClassName="feature-card31-root-class-name1" />
+            ))}
           </div>
         </div>
       </div>
-      <div  id="main-section" className="landing-page-main-mission-vission">
+      <div id="main-section" className="landing-page-main-mission-vission">
         <h1>Our services</h1>
         <span className="landing-page-text33">Recommended</span>
         <div className="landing-page-cards-container">
@@ -158,8 +152,8 @@ const Home = (props) => {
           </div>
         </div>
       </div>
-      <SocialMedia/>
-    <Footer/>
+      <SocialMedia />
+      <Footer />
     </div>
   );
 };

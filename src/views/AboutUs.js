@@ -106,7 +106,130 @@ const AboutUs = (props) => {
           </div>
         </div>
       </div>
-
+      <h1 className="text-center mt-5 pt-5">Area of Services</h1>
+      <div
+        style={{
+          width: "100%",
+          boxShadow: "5px 5px 10px 2px rgba(18, 18, 18, 0.1)",
+        }}
+        className="container text-center my-5 p-5"
+      >
+        <h1 className="text-center pb-4">Los Angeles Country:</h1>
+        <div className="row">
+          <div class="col-sm-4">
+            <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary mt-5">
+          Avail our Services for this Area
+        </button>
+      </div>
+      <div
+        style={{
+          width: "100%",
+          boxShadow: "5px 5px 10px 2px rgba(18, 18, 18, 0.1)",
+        }}
+        className="container text-center my-5 p-5"
+      >
+        <h1 className="text-center pb-4">Los Angeles Country:</h1>
+        <div className="row">
+          <div class="col-sm-4">
+            <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary mt-5">
+          Avail our Services for this Area
+        </button>
+      </div>
+      <div
+        style={{
+          width: "100%",
+          boxShadow: "5px 5px 10px 2px rgba(18, 18, 18, 0.1)",
+        }}
+        className="container text-center my-5 p-5"
+      >
+        <h1 className="text-center pb-4">Los Angeles Country:</h1>
+        <div className="row">
+          <div class="col-sm-4">
+            <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+              <li>Lorem ipsum</li>
+            </ul>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary mt-5">
+          Avail our Services for this Area
+        </button>
+      </div>
       <div id="F&A" className="page-container">
         <h1 className="page-text12">
           <span>
