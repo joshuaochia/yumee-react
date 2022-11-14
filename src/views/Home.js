@@ -14,6 +14,7 @@ import SocialMedia from "../components/SocialMedia";
 import serviceBackground from "../assets/joyful.png";
 import Card from "../components/Card";
 import { cards } from "../data";
+import bg3 from '../assets/bg3.png'
 
 const Home = (props) => {
   const [isApplicantForm, setIsApplicantForm] = useState(false);
@@ -23,7 +24,7 @@ const Home = (props) => {
         <title>yumee</title>
         <meta property="og:title" content="yumee" />
       </Helmet>
-      <div className="landing-page-top-container">
+      <div style={{ backgroundImage: `url(${bg3})`, backgroundPosition:'bottom'}} className="landing-page-top-container">
         <NavBar />
         <div
           style={{ height: "100%" }}

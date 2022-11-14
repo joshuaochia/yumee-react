@@ -119,7 +119,7 @@ const AboutUs = (props) => {
         <div className="row">
           <div class="col-sm-4 d-flex justify-content-center">
             <ul style={{ display: "inline-block", verticalAlign: "middle" }}>
-              <li>Beverly Hills, Pasadena,</li>
+              <li>Beverly Hills, Pasadena</li>
               <li>Santa Monica</li>
               <li>Calabasas</li>
               <li>Culver</li>
@@ -224,28 +224,73 @@ const AboutUs = (props) => {
           </span>
           <br></br>
         </h1>
-        <span className="page-text15">1. Is the Company licensed?</span>
+        <span className="page-text15">
+          1. What kind of services does the homecare offer?
+        </span>
         <span className="page-text16">
-          Yes, we are licensed and bonded with 3 years of experience in the
-          industry.
+          My Joyful Hearts provide caregiver/s to a person that cannot perform
+          ADL(activities of daily living). Our caregivers will help in
+          taking/planning taking medications
         </span>
-        <span className="page-text17">
-          2. Do you conduct background check on your caregiver?
-        </span>
+        <span className="page-text17">2. What is ADL?</span>
         <span className="page-text18">
-          Yes, most of our caregiver is personally picked and interviewed by our
-          staff members.
+          ADL or Activities of Daily Living is a way to determine what level of
+          care your loved one needs. Bathing, toilet hygiene, grooming,
+          dressing/ undressing Mobility at home Bed and wheelchair transfer
         </span>
         <span className="page-text19">
-          4. Are your caregivers live in/live out?
+          3. Do you handle patients with special needs?
         </span>
         <span className="page-text20">
-          Our caregivers can do both live in and out. Depends on the patients
-          need.
+          MJHhcs can also provide care for patients with Dementia and/or
+          Alzheimer's.
         </span>
-        <span className="page-text21">5. What are your minimum hours?</span>
+        <span className="page-text21">
+          4. How do I know if my loved ones need a caregiver/s?
+        </span>
         <span className="page-text22">
-          Our hours are case to case, depends on the patient&apos;s need.
+          If your loved ones cannot manage to perform ADL and/or they need
+          somebody round the clock to look after him/her/them. We could help in
+          developing a plan and support for your loved ones.
+        </span>
+        <span className="page-text21">
+          5. What if I don't like the caregiver that you assigned to me??
+        </span>
+        <span className="page-text22">
+          Before we assign caregivers that will take care of you or your loved
+          one, there is always an opportunity to do an interview. And you can
+          call us for the replacement.
+        </span>
+        <span className="page-text21">
+          6. What if my caregiver gets sick and/or goes on a vacation?
+        </span>
+        <span className="page-text22">
+          For caregivers who will go on vacation, it will be planned and we will
+          send another caregiver to substitute(a reliever). This is the same as
+          when the caregiver gets sick.
+        </span>
+        <span className="page-text21">7. Who pays for homecare?</span>
+        <span className="page-text22">
+          We are accepting long term care insurance payments depending on the
+          level of care that is needed. There is also an option to do direct
+          payment.
+        </span>
+        <span className="page-text21">8. Are you licensed?</span>
+        <span className="page-text22">
+          Yes, My Joyful Hearts are a licensed and bonded in health service in
+          state of california( pls verify the agency)
+        </span>
+        <span className="page-text21">9. Do you provide medical services?</span>
+        <span className="page-text22">
+          We only provide non medical, however, we could help to coordinate
+          medical services.
+        </span>
+        <span className="page-text21">
+          10. Are you only providing care in private residence?
+        </span>
+        <span className="page-text22">
+          MJHHcs also provide care for senior living communities, facilities
+          etc.
         </span>
       </div>
 

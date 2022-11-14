@@ -14,6 +14,7 @@ const Footer = () => {
             <a
               rel="noreferrer noopener"
               className="landing-page-link03"
+              href="/"
               onClick={() =>
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
               }
@@ -21,8 +22,7 @@ const Footer = () => {
               Home
             </a>
             <a
-              href="https://example.com"
-              target="_blank"
+              href="/about"
               rel="noreferrer noopener"
               className="landing-page-link04"
             >
